@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    transition: 2s;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -o-transition: 2s;
+    background-image: url(./upload/image1.jpeg);
+    background-repeat: repeat;
+    background-size: auto, cover;
+    background-position: top center;
+    background-attachment: fixed;
+    background-color: black;
+}
+.center {
+    margin-top: 10%;
+}
+.leden .aantal,
+.aanwezigen .aantal {
+    text-align: center;
+    font-family: roboto, sans-serif;
+    font-size: 30pt;
+    font-weight: 400;
+    color: #fff;
+    
+}
+.leden .aantal #number, .aanwezigen .aantal #number {
+    font-weight: 700;
+    font-size: 200pt;
+    line-height: 170pt;
+    -moz-text-shadow: 0 0 100px #fff;
+    -webkit-text-shadow: 0 0 100px #fff;
+    text-shadow: 0px 0px 100px #fff;
+}
+.aanwezigen .aantal #number {
+    font-size: 150pt;
+}
+#uitleg,
+#update {
+    font-size: 14pt;
+    font-style: italic;
+    margin-top: 50px;
+}
+.btn-success,
+.btn-danger {
+    margin-right: 5%;
+}
+#footer {
+    font-size: 12px;
+    text-align: right;
+}
