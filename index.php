@@ -17,32 +17,19 @@
 </head>
 
 <body>
-    <a href='controls.php'>input</a>
+<br>
+<a class="btn-lg btn-warning" href='./controls/index.php' >Invoer</a>
 
 <?php
+$filename = "./controls/data.txt";
+$file = fopen($filename, "r") or die("Unable to open file!");
+$data= fread($file,filesize($filename));
+fclose($file);
+$data=explode(";",$data);
 
-	//Connecting to sql db.
-	$db_host="";
-	$db_db="";
-	$db_user="";
-	$db_pw="";
+	$tijd  = $data[0]; //zet sqlresult om in var
+	$start = $data[1]; //zet sqlresult om in var		
 
-	$conn = mysqli_connect($db_host,$db_db,$db_user,$db_pw);
-	// Check connection
-	if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-	} 
-	
-	// get data from sql
-	$sql = "SELECT * FROM `Data` ORDER BY `Data`.`Tijd` DESC Limit 1";
-	$result = $conn->query($sql);
-	$row = mysqli_fetch_row($result);
-	$tijd  = $row[0]; //zet sqlresult om in var
-	$start = $row[1]; //zet sqlresult om in var		
-	//echo '<pre>';
-	//print_r($row); //$row[0] = tijd, $row[1]=leden. Comment dit nadat het verwerkt is.
-	
-	$conn->close();
 
 ?>
 
