@@ -5,9 +5,9 @@ body {
     -webkit-transition: 2s;
     -moz-transition: 2s;
     -o-transition: 2s;
-    background-image: url(./upload/image1.jpeg);
-    background-repeat: repeat;
-    background-size: auto, cover;
+    background-image: url(./uploads/background.png);
+   
+    background-size: cover;
     background-position: top center;
     background-attachment: fixed;
     background-color: black;
@@ -48,4 +48,12 @@ body {
 #footer {
     font-size: 12px;
     text-align: right;
+}
+.input {
+	opacity: .95;
+	background: white;
+}
+.pwbox {
+	opacity: .95;
+	background: white;
 }
