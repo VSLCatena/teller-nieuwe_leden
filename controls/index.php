@@ -28,9 +28,9 @@ include("./password_protect.php");
 $filename = "data.txt";
 
 	if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['AantalLeden'])){
-		$start = $_POST['AantalLeden'];
+		$start = intval($_POST['AantalLeden']);
 		$waarde = $_POST['waarde'];
-        $newvalue = $_POST['AantalLeden'];
+        $newvalue = intval($_POST['AantalLeden']);
 			if ($waarde == "plus 1"){
 				$start = $start +1;
 			}
