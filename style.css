@@ -5,39 +5,27 @@ html, body {
 body {
     margin: 0;
     padding: 0;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -o-transition: 2s;
     background-image: url(./uploads/background.png);
-   
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     background-attachment: fixed;
-    background-color: black;
-}
-.center {
-    margin-top: 10%;
-}
-.leden .aantal,
-.aanwezigen .aantal {
-    text-align: center;
-    font-family: roboto, sans-serif;
-    font-size: 30pt;
+    font-family: roboto, sans-serif !important;
     font-weight: 400;
     color: #fff;
-    
 }
-.leden .aantal #number, .aanwezigen .aantal #number {
+
+.aantal {
+    font-size: 30pt;
+}
+
+
+#number {
     font-weight: 700;
     font-size: 200pt;
     line-height: 170pt;
     -moz-text-shadow: 0 0 100px #fff;
     -webkit-text-shadow: 0 0 100px #fff;
     text-shadow: 0px 0px 100px #fff;
-}
-.aanwezigen .aantal #number {
-    font-size: 150pt;
 }
 #uitleg,
 #update {
@@ -55,9 +43,14 @@ body {
 }
 .input {
 	opacity: .95;
-	background: white;
+    background: white;
 }
 .pwbox {
 	opacity: .95;
 	background: white;
+}
+
+.settings {
+    margin-top: 16px;
+    margin-left: 16px;
 }
